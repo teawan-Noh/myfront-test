@@ -70,7 +70,7 @@
         function getFiles() {
             $.ajax({
                 type: 'GET',
-                url: '{EB URL}/files',
+                url: 'http://mybackend-env-1.eba-h3zsn2qp.ap-northeast-2.elasticbeanstalk.com/files',
                 success: function (data) {
                     for(let i = 0 ; i < data['files'].length ; i++){
                         makeCard(data['files'][i]);
